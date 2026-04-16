@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Henn;
+   src: url(HennyPenny-Regular.ttf);
+}
+
+body { background: #000147;
+background: linear-gradient(187deg, rgba(0, 1, 71, 1) 0%, rgba(0, 123, 255, 1) 38%, rgba(40, 115, 40, 1) 100%);
+    
+color:DarkSeaGreen;
+    
+    font-family:Henn;
+   
+    font-weight: 500;
+}
+h2,
+p,
+u {
+    color:DarkSeaGreen;
+    font-family: CrimsonText-Regular;
+    font-weight: 500;
+}
+ol{color:darkseagreen}
+
+img {
+    width: 200px;
+}
