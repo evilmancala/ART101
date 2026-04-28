@@ -1,9 +1,9 @@
 let count = 0;
 let buttonCreature = {
-    name: "Needy Button",
-    species: "interface creature",
-    favoriteFood: "clicks",
-    moods: ["sleepy", "nervous", "glowing", "dramatic", "hopeful", "confused"]
+    name: "Freakish Fulianos",
+    species: " little guy in the code",
+    favoriteFood: "0s and 1s",
+    moods: ["fatigued", "ecstatic", "joyous", "dramatic", "unfathomable", "bewildered"]
 };
 $("#needy-button").click(function () {
 
@@ -14,10 +14,10 @@ $("#needy-button").click(function () {
     let currentMood = buttonCreature.moods[arrayPosition];
     
     let message = "<p>You clicked me " + count + " times.</p>";
-     message =  message + "My current mood is " + currentMood;
+     message =  message + "<p>My current mood is " + currentMood + ".</p>";
     message = message + "<p>My name is " + buttonCreature.name + ".</p>";
-    message = message + "<p>I am an " + buttonCreature.species + ".</p>";
-    message = message + "<p>My favorite food is " + buttonCreature.favoriteFood + ".</p>";  
+    message = message + "<p>I am a(n) " + buttonCreature.species + ".</p>";
+     message = message + "<p>My favorite food is " + buttonCreature.favoriteFood + ".</p>";  
 
     $("#output").html(message);
 
