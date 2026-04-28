@@ -1,0 +1,27 @@
+body {
+  background-image: url("trees.png");
+  background-size: 1000px, 400px;
+  background-repeat: round;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+p {
+ color: beige; text-align: center; font-family: CrimsonText-Regular;
+     
+}
+
+.border {border: 5px ridge antiquewhite; position: relative;}
+
+.test {
+    background: color();
+    margin: 30px;
+    padding: 50px;
+    align-items: center;
+}
+
+.my-flex { display: flex;  flex-direction:row; align-items: center;}
+
+.grid-container{gap: 50px; padding-right: 50px;}
