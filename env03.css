@@ -1,0 +1,28 @@
+body {
+  background-image: url("trees.png");
+  background-size: 1000px 800px;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: beige; text-align: center; font-family: CrimsonText-Regular;
+}
+
+.border {border: 5px ridge antiquewhite; position: relative;}
+
+.test {
+    background: color();
+    margin: 30px;
+    padding: 50px;
+}
+
+.my-flex { display: flex;  flex-direction:inherit;}
+
+.grid-container{gap: 50px; padding-left: 50px; align-items: center;}
+
+.jeff {
+  background-color: khaki; border-style: ridge; border-color: ghostwhite; border-bottom: 10px; font-family: CrimsonText-Regular; 
+font-size: 24px; 
+}
