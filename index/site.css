@@ -153,12 +153,14 @@ img {
     position: -webkit-sticky;
     position: sticky;
    flex-direction: row;
+   padding: 50%;
 }
 
 .envi h2 {
     margin-top: 0;
     flex: 2;
     display:inline-block;
+    
 }
 
 .envi li {
@@ -173,3 +175,6 @@ img {
     font-weight: bold;
     display:inline-block;
 }
+
+#help{ display: flex;
+  justify-content: space-around;}
