@@ -4,6 +4,8 @@ let environmentElements = ["cough from the dust", "jump at your shadow", "shiver
 
 let count=0
 
+
+/// for the first button to let you click
 let clickCount = 0
 let mainEntity = {
     name: "The Forest",
@@ -19,8 +21,8 @@ $("#tony").click(function () {
 
     let currentElement = mainEntity.favoriteElement[arrayPosition];
     
-    let message = "<p>You have scanned the forest " + count + " times.</p>";
-    message =  message + "<p>You " + environmentElements[clickCount] + ".</p>";
+    let message = "<p>You have scanned the forest " + count + " times.</p>"; /// the # of clicks
+    message =  message + "<p>You " + environmentElements[clickCount] + ".</p>"; ///where you get the forest details a
  
     clickCount=clickCount+1;
  
@@ -28,7 +30,7 @@ $("#tony").click(function () {
         clickCount=0;  
     }
 
-    $("#out").html(message);
+    $("#out").html(message); ///how to get the messages to show up
 
     console.log(count);
     console.log(arrayPosition);
@@ -38,6 +40,8 @@ $("#tony").click(function () {
 
 });
 
+/// Riddle time...
+
 function askRiddle(whatGuess) {
     let userRiddle = prompt("What's this? A wanderer? I'll leave you be if you can answer this... What's 6+7? ");
 
@@ -45,29 +49,33 @@ function askRiddle(whatGuess) {
         $("#output").html("You got it!");
     }
     else if (userRiddle == 67){
-        $("#output").html("WRONG.");
+        $("#output").html("WRONG."); /// secret third option for riddle. brainrot
     }
     else {
-        $("#output").html("Try again~!");
+        $("#output").html("Try again~!"); ///also occurs when you accidentially click off the screen
     }
 }
 
+
 $("#question").click(function () {
     askRiddle(13);
-});
+}); /// the correct answer
 
+
+/// button toggles for images
 $(document).ready(function(){
   $("#bye").click(function(){
-    $("[src]").hide(1000);
+    $("[src]").hide(1000); ///hides img
   });
 });
 
 $(document).ready(function(){
   $("#hi").click(function(){
-    $("[src]").show(1000);
+    $("[src]").show(1000); ///shows img
   });
 });
 
+/// how to have creatures think 
 $("#creature").hover(
   function () {
     $("#thought").stop(true, true).slideDown(300);
@@ -77,6 +85,7 @@ $("#creature").hover(
   }
 );
 
+/// had to make a second one bc i could only do one img at a time
 $("#monster").hover(
   function () {
     $("#think").stop(true, true).slideDown(300);
